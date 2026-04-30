@@ -1,0 +1,78 @@
+{
+    "name": "project-name",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@emotion/react": "~11.14.0",
+        "@emotion/styled": "~11.14.0",
+        "@mui/icons-material": "~5.16.6",
+        "@mui/material": "~5.16.6",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^7.13.1"
+    },
+    "scripts": {
+        "start": "vite",
+        "dev": "vite",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "build": "vite build",
+        "preview": "vite preview",
+        "check:eslint": "eslint --max-warnings 0 --color src",
+        "check:eslint:fix": "eslint --fix --max-warnings 0 --color src",
+        "check:stylelint": "stylelint --color --report-needless-disables --report-invalid-scope-disables src/**/*.scss",
+        "check:stylelint:fix": "stylelint --fix --color --report-needless-disables --report-invalid-scope-disables src/**/*.scss",
+        "check:spellcheck": "cspell --no-progress --color",
+        "check:all": "npm run check:eslint && npm run check:stylelint && npm run check:spellcheck",
+        "format:check": "prettier --check .",
+        "format": "prettier --write .",
+        "reset": "rimraf dist node_modules && npm install",
+        "bump-version": "node bump-version.js"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@cspell/dict-de-ch": "^1.3.2",
+        "@cspell/dict-de-de": "^4.0.3",
+        "@eslint/js": "^9.20.0",
+        "@testing-library/dom": "~10.4.1",
+        "@testing-library/jest-dom": "^6.9.1",
+        "@testing-library/react": "^16.2.0",
+        "@testing-library/user-event": "^14.6.1",
+        "@types/react": "~19.2.14",
+        "@types/react-dom": "~19.2.3",
+        "@typescript-eslint/eslint-plugin": "~8.59.1",
+        "@typescript-eslint/parser": "~8.59.1",
+        "@vitejs/plugin-react": "^5.1.0",
+        "cspell": "^8.17.5",
+        "eslint": "~10.2.1",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-react": "^7.37.4",
+        "eslint-plugin-react-hooks": "^5.1.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "globals": "^17.3.0",
+        "jsdom": "^26.1.0",
+        "postcss-selector-parser": "~7.1.1",
+        "prettier": "^3.8.2",
+        "rimraf": "^6.1.3",
+        "sass": "^1.85.1",
+        "stylelint": "^16.19.1",
+        "stylelint-config-standard": "^37.0.0",
+        "stylelint-config-standard-scss": "^14.0.0",
+        "stylelint-prettier": "^5.0.3",
+        "stylelint-scss": "^6.11.1",
+        "typescript": "~6.0.3",
+        "vite": "^7.1.10",
+        "vitest": "^3.2.4"
+    }
+}
