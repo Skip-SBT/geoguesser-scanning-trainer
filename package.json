@@ -1,5 +1,5 @@
 {
-    "name": "project-name",
+    "name": "geoguessr-scanning-trainer",
     "version": "1.0.0",
     "private": true,
     "dependencies": {
@@ -9,7 +9,9 @@
         "@mui/material": "~5.16.6",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
-        "react-router-dom": "^7.13.1"
+        "react-router-dom": "^7.13.1",
+        "react-simple-maps": "~3.0.0",
+        "topojson-client": "~3.1.0"
     },
     "scripts": {
         "start": "vite",
@@ -51,6 +53,7 @@
         "@testing-library/user-event": "^14.6.1",
         "@types/react": "~19.2.14",
         "@types/react-dom": "~19.2.3",
+        "@types/topojson-client": "~3.1.5",
         "@typescript-eslint/eslint-plugin": "~8.59.1",
         "@typescript-eslint/parser": "~8.59.1",
         "@vitejs/plugin-react": "^5.1.0",
@@ -73,6 +76,8 @@
         "stylelint-scss": "^6.11.1",
         "typescript": "~6.0.3",
         "vite": "^7.1.10",
-        "vitest": "^3.2.4"
+        "vite-tsconfig-paths": "~6.1.1",
+        "vitest": "^3.2.4",
+        "world-atlas": "~2.0.2"
     }
 }

@@ -8,7 +8,7 @@ import globals from 'globals';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 export default [
     {
-        ignores: ['src/types/theme.d.ts', 'dist/'],
+        ignores: ['src/types/theme.d.ts', 'src/declarations.d.ts', 'dist/'],
     },
     js.configs.recommended,
     {
@@ -30,6 +30,7 @@ export default [
             'simple-import-sort': simpleImportSort,
         },
         rules: {
+            'no-unused-vars': 'off',
             '@typescript-eslint/no-unused-vars': 'warn',
             'import/named': 'off',
             'react/jsx-uses-react': 'off',
