@@ -103,7 +103,7 @@ function MapView({cities, country, onCityClick, maxImportance}: Props) {
             onMouseLeave={stopDrag}
         >
             <g transform={`translate(${tf.tx},${tf.ty}) scale(${tf.k})`}>
-                <Geographies geography="/world-50m.json">
+                <Geographies geography={`${import.meta.env.BASE_URL}world-50m.json`}>
                     {({geographies}) =>
                         geographies.map((geo) => (
                             <Geography
